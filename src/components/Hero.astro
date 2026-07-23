@@ -148,6 +148,18 @@ import { siteConfig } from "../config";
       >
         {siteConfig.title}
       </p>
+      <div></div>
+      <div class="pt-3">
+        <div class="flex flex-wrap gap-3">
+          {
+            siteConfig.skills.map((skill) => (
+              <span class="px-3 sm:px-3 py-3.5 sm:py-3 bg-gray-100 text-gray-800 rounded-full text-sm sm:text-base md:text-lg font-sm hover:bg-gray-200 transition-colors duration-200">
+                {skill}
+              </span>
+            ))
+          }
+      </div>
+    </div>
     </div>
   </div>
   <div
